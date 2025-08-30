@@ -1,15 +1,29 @@
+# ---------- Gradle / builds ----------
+.gradle/
+**/build/
+captures/
+.externalNativeBuild/
+.cxx/
+*.log
+*.hprof
+
+# ---------- Android Studio (IDE) ----------
+# Ignora TODO lo de .idea (evita que se suban configs locales del IDE)
+/.idea/
 *.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
+
+# ---------- Config local de cada PC ----------
+# (este archivo siempre debe ignorarse)
 local.properties
+
+# ---------- Artefactos de salida ----------
+# (por si generas APK/AAB fuera de /build)
+*.apk
+*.ap_
+*.aab
+
+# ---------- SO / editores ----------
+.DS_Store
+Thumbs.db
+.vscode/
+
