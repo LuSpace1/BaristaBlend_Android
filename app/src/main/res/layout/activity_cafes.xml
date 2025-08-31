@@ -5,6 +5,42 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#8C2E2E"
+    android:backgroundTint="#FFFFFF"
     tools:context=".CafesActivity">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="448dp"
+        android:layout_height="69dp"
+        app:backgroundTint="#26101010"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="926dp">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="75dp"
+            android:layout_height="69dp"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginStart="100px"
+            android:layout_marginEnd="100px"
+            android:src="@drawable/image_13" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="75dp"
+            android:layout_height="69dp"
+            android:layout_gravity="center|center_horizontal"
+            android:backgroundTint="#25615858"
+            android:src="@drawable/image_11" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="75dp"
+            android:layout_height="69dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="100px"
+            android:src="@drawable/image_7" />
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
