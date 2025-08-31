@@ -44,6 +44,19 @@
         app:layout_constraintBottom_toBottomOf="@id/icon_profile_top"
         app:tint="@android:color/black" />
 
+    <ImageButton
+        android:id="@+id/imageButton9"
+        android:layout_width="82dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="183dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="183dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+        app:srcCompat="@drawable/agregar"
+        tools:ignore="MissingConstraints" />
+
     <View
         android:id="@+id/divider"
         android:layout_width="150dp"
@@ -62,7 +75,7 @@
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent" />
 
     <View
         android:id="@+id/bottom_bar_divider"
@@ -76,128 +89,173 @@
 
 
     <ScrollView
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+
+        android:id="@+id/scrollView2"
+        android:layout_width="447dp"
+        android:layout_height="665dp"
         android:layout_marginTop="16dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintTop_toBottomOf="@id/divider"
-        app:layout_constraintBottom_toTopOf="@id/bottom_bar_divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintTop_toBottomOf="@id/divider">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             android:baselineAligned="false"
+            android:orientation="horizontal"
             android:weightSum="2">
 
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
                 android:layout_weight="1"
+                android:orientation="vertical"
                 android:paddingHorizontal="8dp">
 
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="130dp"
                     app:srcCompat="@drawable/french_press_1" />
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="French Press"
-                    android:paddingBottom="16dp"/>
+                    android:paddingBottom="16dp"
+                    android:text="French Press" />
 
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="130dp"
                     app:srcCompat="@drawable/hario_v60" />
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Hario V60"
-                    android:paddingBottom="16dp"/>
+                    android:paddingBottom="16dp"
+                    android:text="Hario V60" />
 
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="130dp"
                     app:srcCompat="@drawable/aeropress" />
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Aeropress"
-                    android:paddingBottom="16dp"/>
+                    android:paddingBottom="16dp"
+                    android:text="Aeropress" />
 
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="130dp"
                     app:srcCompat="@drawable/clever_dreeper" />
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Clever Dripper"
-                    android:paddingBottom="16dp"/>
+                    android:paddingBottom="16dp"
+                    android:text="Clever Dripper" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
                 android:layout_weight="1"
+                android:orientation="vertical"
                 android:paddingHorizontal="8dp">
 
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="130dp"
                     app:srcCompat="@drawable/chemex" />
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Chemex"
-                    android:paddingBottom="16dp"/>
+                    android:paddingBottom="16dp"
+                    android:text="Chemex" />
 
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="130dp"
                     app:srcCompat="@drawable/kalita" />
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Kalita"
-                    android:paddingBottom="16dp"/>
+                    android:paddingBottom="16dp"
+                    android:text="Kalita" />
 
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="130dp"
                     app:srcCompat="@drawable/origami" />
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Origami"
-                    android:paddingBottom="16dp"/>
+                    android:paddingBottom="16dp"
+                    android:text="Origami" />
 
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="130dp"
                     app:srcCompat="@drawable/hario_brech" />
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Hario Switch"
-                    android:paddingBottom="16dp"/>
+                    android:paddingBottom="16dp"
+                    android:text="Hario Switch" />
 
             </LinearLayout>
         </LinearLayout>
+
     </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="448dp"
+        android:layout_height="69dp"
+        app:backgroundTint="#26101010"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="75dp"
+            android:layout_height="69dp"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginStart="100px"
+            android:layout_marginEnd="100px"
+            android:src="@drawable/image_13" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="75dp"
+            android:layout_height="69dp"
+            android:layout_gravity="center|center_horizontal"
+            android:backgroundTint="#25615858"
+            android:src="@drawable/image_11" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="75dp"
+            android:layout_height="69dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="100px"
+            android:src="@drawable/image_7" />
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
