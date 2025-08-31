@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
         }, 500) // ~0.5 s para que se luzca el logo sin demorar
 
         // 3) Carga tu UI normal basada en XML
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_login)
 
         // 4) Aquí ya puedes inicializar vistas, viewmodels, etc.
     }
