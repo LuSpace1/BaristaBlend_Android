@@ -13,8 +13,8 @@
         android:layout_width="448dp"
         android:layout_height="69dp"
         app:backgroundTint="#26101010"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="926dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="0dp">
 
         <ImageButton
             android:id="@+id/imageButton"
