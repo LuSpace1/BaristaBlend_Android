@@ -9,7 +9,7 @@ import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        // 1) Instala la API de Splash (compatibilidad hasta Android 6.0)
+        // 1) Instalamos la API de Splash
         val splash = installSplashScreen()
 
         super.onCreate(savedInstanceState)
@@ -19,12 +19,10 @@ class MainActivity : AppCompatActivity() {
         splash.setKeepOnScreenCondition { !listo }
         Handler(Looper.getMainLooper()).postDelayed({
             listo = true
-        }, 500) // ~0.5 s para que se luzca el logo sin demorar
+        }, 1000) // Tiempo en milisegundos
 
         // 3) Carga tu UI normal basada en XML
         setContentView(R.layout.activity_login)
-
-        // 4) Aquí ya puedes inicializar vistas, viewmodels, etc.
     }
 }
 

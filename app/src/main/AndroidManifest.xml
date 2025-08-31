@@ -14,28 +14,27 @@
 
         <activity
             android:name=".PanelConfiguracionActivity"
-            android:exported="false" />
+            android:exported="true" />
 
         <activity
             android:name=".UserActivity"
-            android:exported="false" />
+            android:exported="true" />
 
         <activity
             android:name=".CafesActivity"
-            android:exported="false" />
+            android:exported="true" />
 
         <activity
             android:name=".RecetasActivity"
-            android:exported="false" />
+            android:exported="true" />
 
         <activity
             android:name=".LoginActivity"
-            android:exported="false" />
+            android:exported="true" />
 
-        <!-- Ya NO es launcher -->
         <activity
             android:name=".MenuActivity"
-            android:exported="false" />
+            android:exported="true" />
 
         <!-- ÚNICO launcher con tema de Splash -->
         <activity
