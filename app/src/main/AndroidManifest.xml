@@ -11,39 +11,44 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BaristaBlend">
+
         <activity
             android:name=".PanelConfiguracionActivity"
             android:exported="false" />
+
         <activity
             android:name=".UserActivity"
             android:exported="false" />
+
         <activity
             android:name=".CafesActivity"
             android:exported="false" />
+
         <activity
             android:name=".RecetasActivity"
             android:exported="false" />
+
         <activity
             android:name=".LoginActivity"
             android:exported="false" />
+
+        <!-- Ya NO es launcher -->
         <activity
             android:name=".MenuActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:exported="false" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <!-- ÚNICO launcher con tema de Splash -->
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Theme.BaristaBlend.Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
+
 
 </manifest>
