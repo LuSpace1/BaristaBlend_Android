@@ -10,6 +10,7 @@
     tools:context=".CafesActivity">
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavi"
         android:layout_width="448dp"
         android:layout_height="69dp"
         app:backgroundTint="#26101010"
@@ -17,7 +18,7 @@
         tools:layout_editor_absoluteX="0dp">
 
         <ImageButton
-            android:id="@+id/imageButton"
+            android:id="@+id/imageButtn"
             android:layout_width="75dp"
             android:layout_height="69dp"
             android:layout_gravity="left|center_vertical"
@@ -26,7 +27,7 @@
             android:src="@drawable/image_13" />
 
         <ImageButton
-            android:id="@+id/imageButton2"
+            android:id="@+id/imageButtn2"
             android:layout_width="75dp"
             android:layout_height="69dp"
             android:layout_gravity="center|center_horizontal"
@@ -34,7 +35,7 @@
             android:src="@drawable/image_11" />
 
         <ImageButton
-            android:id="@+id/imageButton3"
+            android:id="@+id/imageButtn3"
             android:layout_width="75dp"
             android:layout_height="69dp"
             android:layout_gravity="right|center_vertical"
@@ -42,5 +43,347 @@
             android:src="@drawable/image_7" />
 
     </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <LinearLayout
+        android:id="@+id/linearLa"
+        android:layout_width="378dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="36dp"
+        android:background="#3C161111"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayo666">
+
+        <LinearLayout
+            android:layout_width="209dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="208dp"
+                android:layout_height="119dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageVie8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/cafeuno" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textVi9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Altura"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView888"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1200 M.S.N.M"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textView2888"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Region"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView899"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="imaos"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textView98"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="notas"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="caramelo, chocolate"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="167dp"
+            android:layout_height="223dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/as99889"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Origen"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView149998"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Brasil"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textView9987"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="55dp"
+                android:text="Proceso"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView78"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="honey"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textView876"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Variedad"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView678"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Catimor"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayo666"
+        android:layout_width="446dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="32dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@android:drawable/ic_menu_revert" />
+
+        <TextView
+            android:id="@+id/textVie66"
+            android:layout_width="wrap_content"
+            android:layout_height="57dp"
+            android:layout_weight="1"
+            android:text="Café"
+            android:textAlignment="center"
+            android:textSize="34sp" />
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@android:drawable/ic_menu_preferences" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayou6665"
+        android:layout_width="378dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="58dp"
+        android:background="#3C161111"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLa">
+
+        <LinearLayout
+            android:layout_width="209dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="208dp"
+                android:layout_height="119dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageVi55"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/cafedos" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textVi55"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Altura"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView2665"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1600 M.S.N.M"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textView651"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Region"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView3221"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="cajamarca"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textView212"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="notas"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textVi3214"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="herbales"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="167dp"
+            android:layout_height="223dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/te323View13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Origen"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tex323ew14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Colombia"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/te415ew15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="55dp"
+                android:text="Proceso"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tex16ew16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Natural"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/te612ew17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Variedad"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tex754ew18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Catimor"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="105dp"
+        android:layout_height="102dp"
+        android:layout_marginStart="172dp"
+        android:layout_marginBottom="24dp"
+        android:background="#3C161111"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavi"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/text7654ew25"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="agregar"
+            android:textAlignment="center" />
+
+        <ImageButton
+            android:id="@+id/imageB876on17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/agregar" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
