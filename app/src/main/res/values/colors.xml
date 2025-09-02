@@ -83,7 +83,7 @@
     <color name="md_theme_onSecondaryFixed_mediumContrast">#FFFFFF</color>
     <color name="md_theme_secondaryFixedDim_mediumContrast">#614F61</color>
     <color name="md_theme_onSecondaryFixedVariant_mediumContrast">#FFFFFF</color>
-    <color name="md_theme_tertiaryFixed_mediumContrast">#926059</color>
+    <color name="md_theme_tertiaryFixed_mediumContrast">#926059</color>||
     <color name="md_theme_onTertiaryFixed_mediumContrast">#FFFFFF</color>
     <color name="md_theme_tertiaryFixedDim_mediumContrast">#774942</color>
     <color name="md_theme_onTertiaryFixedVariant_mediumContrast">#FFFFFF</color>
@@ -131,7 +131,7 @@
     <color name="md_theme_secondaryFixedDim_highContrast">#3D2D3E</color>
     <color name="md_theme_onSecondaryFixedVariant_highContrast">#FFFFFF</color>
     <color name="md_theme_tertiaryFixed_highContrast">#693D37</color>
-    <color name="md_theme_onTertiaryFixed_highContrast">#FFFFFF</color>
+    <color name="md_theme_onTertiaryFixed_highContrast">#000000</color>
     <color name="md_theme_tertiaryFixedDim_highContrast">#4F2722</color>
     <color name="md_theme_onTertiaryFixedVariant_highContrast">#FFFFFF</color>
     <color name="md_theme_surfaceDim_highContrast">#C0B6BD</color>
@@ -141,6 +141,6 @@
     <color name="md_theme_surfaceContainer_highContrast">#EADFE6</color>
     <color name="md_theme_surfaceContainerHigh_highContrast">#DCD1D8</color>
     <color name="md_theme_surfaceContainerHighest_highContrast">#CEC4CA</color>
-    <color name="splash_background">#673B35</color> <!-- o tu md_theme_light_* -->
+    <color name="splash_background">#5EFFFFFF</color> <!-- o tu md_theme_light_* -->
 
 </resources>
