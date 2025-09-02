@@ -42,7 +42,7 @@
             app:iconSize="30dp" />
 
         <Button
-            android:id="@+id/btnReceta2"
+            android:id="@+id/btnReceta3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="30dp"
@@ -52,7 +52,7 @@
             app:iconSize="30dp" />
 
         <Button
-            android:id="@+id/btnReceta2"
+            android:id="@+id/btnReceta4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="30dp"
@@ -181,28 +181,28 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
 
         <ImageButton
-            android:id="@+id/imageButton12"
+            android:id="@+id/imageButton9"
             android:layout_width="32dp"
             android:layout_height="50dp"
             android:layout_marginBottom="30dp"
             app:srcCompat="@android:drawable/btn_star_big_on" />
 
         <ImageButton
-            android:id="@+id/imageButton13"
+            android:id="@+id/imageButton10"
             android:layout_width="32dp"
             android:layout_height="50dp"
             android:layout_marginBottom="30dp"
             app:srcCompat="@android:drawable/btn_star_big_on" />
 
         <ImageButton
-            android:id="@+id/imageButton13"
+            android:id="@+id/imageButto11"
             android:layout_width="32dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="30dp"
             app:srcCompat="@android:drawable/btn_star_big_on" />
 
         <ImageButton
-            android:id="@+id/imageButton13"
+            android:id="@+id/imageButton12"
             android:layout_width="32dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="30dp"
