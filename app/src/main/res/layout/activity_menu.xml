@@ -6,7 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white"
+    android:background="@color/md_theme_primary"
     tools:context=".MenuActivity">
 
     <TextView
@@ -35,7 +35,6 @@
         android:layout_width="100dp"
         android:layout_height="0dp"
         android:layout_marginBottom="20dp"
-        android:backgroundTint="@color/design_default_color_background"
         android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
@@ -50,15 +49,26 @@
             android:gravity="center"
             android:text="Agregar"
             android:textAlignment="center"
-            android:textSize="20dp" />
+            android:textSize="20dp" />\
 
-        <ImageButton
-            android:id="@+id/imageB876on17"
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.Material3.Button.IconButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@color/design_default_color_background"
-            app:srcCompat="@drawable/agregar" />
+            app:icon="@drawable/agregar"
+            android:backgroundTint="@color/md_theme_secondaryContainer"
+            app:iconTint="@color/md_theme_secondary"
+            app:iconSize="32dp"
+            />
+
+<!--        <ImageButton-->
+        <!--            android:id="@+id/imageB876on17"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_weight="1"-->
+        <!--            android:backgroundTint="@color/md_theme_secondaryContainer"-->
+        <!--            android:background="@color/md_theme_secondaryContainer"-->
+        <!--            app:srcCompat="@drawable/agregar" />-->
     </LinearLayout>
 
     <View
@@ -112,7 +122,7 @@
             android:id="@+id/btnUserMenu"
             android:layout_width="75dp"
             android:layout_height="69dp"
-            android:backgroundTint="#25615858"
+            android:background="@color/md_theme_tertiaryContainer"
             android:layout_gravity="right|center_vertical"
             android:layout_marginRight="100px"
             android:src="@drawable/image_7" />
@@ -120,7 +130,6 @@
     </FrameLayout>
 
     <ScrollView
-
         android:id="@+id/scrollView2"
         android:layout_width="447dp"
         android:layout_height="665dp"

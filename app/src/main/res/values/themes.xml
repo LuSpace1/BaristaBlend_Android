@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.BaristaBlend" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.BaristaBlend" parent="Theme.Material3.Light.NoActionBar">
         <item name="colorPrimary">@color/md_theme_primary</item>
         <item name="colorOnPrimary">@color/md_theme_onPrimary</item>
         <item name="colorPrimaryContainer">@color/md_theme_primaryContainer</item>
@@ -48,22 +48,5 @@
         <item name="colorSurfaceContainerHigh">@color/md_theme_surfaceContainerHigh</item>
         <item name="colorSurfaceContainerHighest">@color/md_theme_surfaceContainerHighest</item>
     </style>
-    <style name="Theme.BaristaBlend.Splash" parent="Theme.SplashScreen">
-        <!-- Fondo del splash -->
-        <item name="windowSplashScreenBackground">@color/splash_background</item>
 
-        <!-- Icono/animación que se muestra en el centro -->
-        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_splash_logo</item>
-
-        <!-- (Opcional) Duración de una animación AVDrawable -->
-        <item name="windowSplashScreenAnimationDuration">500</item>
-
-        <!-- Branding opcional bajo el icono (pequeño wordmark) -->
-        <!-- <item name="windowSplashScreenBrandingImage">@drawable/ic_brand_wordmark</item> -->
-
-        <!-- Tras el splash, aplica tu tema real -->
-        <item name="postSplashScreenTheme">@style/Theme.BaristaBlend</item>
-    </style>
-
-    <style name="Theme.BaristaBlend" parent="Base.Theme.BaristaBlend" />
 </resources>
