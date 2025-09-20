@@ -6,7 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/md_theme_primary"
+    android:background="@color/md_theme_inverseOnSurface"
     tools:context=".MenuActivity">
 
     <TextView
@@ -21,56 +21,6 @@
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="17dp" />
 
-    <ImageButton
-        android:id="@+id/btnConf"
-        android:layout_width="32dp"
-        android:layout_height="32dp"
-        android:layout_marginEnd="16dp"
-        android:background="#D1FFFFFF"
-        android:src="@android:drawable/ic_menu_manage"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="dp"/>
-
-    <LinearLayout
-        android:layout_width="100dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="20dp"
-        android:gravity="center"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/navBarMenu">
-
-        <TextView
-            android:id="@+id/text7654ew25"
-            android:layout_width="wrap_content"
-            android:layout_height="37dp"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:text="Agregar"
-            android:textAlignment="center"
-            android:textSize="20dp" />\
-
-        <com.google.android.material.button.MaterialButton
-            style="@style/Widget.Material3.Button.IconButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:icon="@drawable/agregar"
-            android:backgroundTint="@color/md_theme_secondaryContainer"
-            app:iconTint="@color/md_theme_secondary"
-            app:iconSize="32dp"
-            />
-
-<!--        <ImageButton-->
-        <!--            android:id="@+id/imageB876on17"-->
-        <!--            android:layout_width="wrap_content"-->
-        <!--            android:layout_height="wrap_content"-->
-        <!--            android:layout_weight="1"-->
-        <!--            android:backgroundTint="@color/md_theme_secondaryContainer"-->
-        <!--            android:background="@color/md_theme_secondaryContainer"-->
-        <!--            app:srcCompat="@drawable/agregar" />-->
-    </LinearLayout>
-
     <View
         android:id="@+id/divider"
         android:layout_width="150dp"
@@ -81,53 +31,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/title" />
 
-    <LinearLayout
-        android:id="@+id/bottom_bar_layout"
-        android:layout_width="0dp"
-        android:layout_height="60dp"
-        android:gravity="center_vertical"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <ImageButton
+        android:id="@+id/btnConf"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="16dp"
+        android:background="#D1FFFFFF"
+        android:src="@android:drawable/ic_menu_manage"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" >
+        tools:layout_editor_absoluteY="dp"/>
 
 
-    </LinearLayout>
-
-    <FrameLayout
-        android:id="@+id/navBarMenu"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:backgroundTint="#26101010">
-
-        <ImageButton
-            android:id="@+id/btnHomeMenu"
-            android:layout_width="75dp"
-            android:layout_height="69dp"
-            android:layout_gravity="left|center_vertical"
-            android:layout_marginStart="100px"
-            android:layout_marginEnd="100px"
-            android:src="@drawable/image_13" />
-
-        <ImageButton
-            android:id="@+id/btnCoffeeMenu"
-            android:layout_width="75dp"
-            android:layout_height="69dp"
-            android:layout_gravity="center|center_horizontal"
-            android:backgroundTint="#25615858"
-            android:src="@drawable/image_11" />
-
-        <ImageButton
-            android:id="@+id/btnUserMenu"
-            android:layout_width="75dp"
-            android:layout_height="69dp"
-            android:background="@color/md_theme_tertiaryContainer"
-            android:layout_gravity="right|center_vertical"
-            android:layout_marginRight="100px"
-            android:src="@drawable/image_7" />
-
-    </FrameLayout>
 
     <ScrollView
         android:id="@+id/scrollView2"
@@ -260,8 +174,80 @@
 
             </LinearLayout>
         </LinearLayout>
-
     </ScrollView>
 
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/navBarMenu">
+
+        <TextView
+            android:id="@+id/text7654ew25"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Agregar"
+            android:textAlignment="center"
+            android:textSize="20dp" />\
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.Material3.Button.IconButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/md_theme_secondaryContainer"
+            app:icon="@drawable/agregar"
+            app:iconSize="40dp"
+            app:iconTint="@color/md_theme_secondary" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/navBarMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center">
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.Material3.Button.IconButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="35dp"
+            android:backgroundTint="@color/md_theme_secondaryContainer"
+            app:icon="@drawable/image_13"
+            app:iconSize="40dp"
+            app:iconTint="@color/md_theme_secondary" />
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.Material3.Button.IconButton"
+            android:id="@+id/btnCoffeeMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/md_theme_secondaryContainer"
+            app:icon="@drawable/image_11"
+            app:iconSize="40dp"
+            app:iconTint="@color/md_theme_secondary" />
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.Material3.Button.IconButton"
+            android:id="@+id/btnUserMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:backgroundTint="@color/md_theme_secondaryContainer"
+            app:icon="@drawable/image_7"
+            app:iconSize="40dp"
+            app:iconTint="@color/md_theme_secondary" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+

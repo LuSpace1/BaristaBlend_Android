@@ -7,6 +7,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.google.android.material.button.MaterialButton
 
 class MenuActivity : AppCompatActivity() {
 
@@ -25,10 +26,10 @@ class MenuActivity : AppCompatActivity() {
         val btnConf = findViewById<ImageButton>(R.id.btnConf)
         btnConf.setOnClickListener { navConf() }
         //logica boton home
-        val btnCoffe = findViewById<ImageButton>(R.id.btnCoffeeMenu)
+        val btnCoffe = findViewById<MaterialButton>(R.id.btnCoffeeMenu)
         btnCoffe.setOnClickListener { navCoffee() }
         //Logica boton User
-        val btnUser = findViewById<ImageButton>(R.id.btnUserMenu)
+        val btnUser = findViewById<MaterialButton>(R.id.btnUserMenu)
         btnUser.setOnClickListener { navUser() }
 
     }
