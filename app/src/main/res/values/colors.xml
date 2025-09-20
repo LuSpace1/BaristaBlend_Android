@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="Juan">#CB27A84B</color>
     <color name="md_theme_primary">#7A4F80</color>
     <color name="md_theme_onPrimary">#FFFFFF</color>
     <color name="md_theme_primaryContainer">#FED6FF</color>
@@ -142,5 +143,7 @@
     <color name="md_theme_surfaceContainerHigh_highContrast">#DCD1D8</color>
     <color name="md_theme_surfaceContainerHighest_highContrast">#CEC4CA</color>
     <color name="splash_background">#5EFFFFFF</color> <!-- o tu md_theme_light_* -->
+
+
 
 </resources>

@@ -9,17 +9,6 @@
     android:background="@android:color/white"
     tools:context=".MenuActivity">
 
-    <ImageView
-        android:id="@+id/icon_profile_top"
-        android:layout_width="32dp"
-        android:layout_height="32dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:src="@android:drawable/ic_menu_myplaces"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:tint="@android:color/black" />
-
     <TextView
         android:id="@+id/title"
         android:layout_width="wrap_content"
@@ -30,26 +19,25 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/icon_profile_top"
-        app:layout_constraintBottom_toBottomOf="@id/icon_profile_top"/>
+        tools:layout_editor_absoluteY="17dp" />
 
-    <ImageView
-        android:id="@+id/icon_settings"
+    <ImageButton
+        android:id="@+id/btnConf"
         android:layout_width="32dp"
         android:layout_height="32dp"
         android:layout_marginEnd="16dp"
+        android:background="#D1FFFFFF"
         android:src="@android:drawable/ic_menu_manage"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@id/icon_profile_top"
-        app:layout_constraintBottom_toBottomOf="@id/icon_profile_top"
-        app:tint="@android:color/black" />
+        app:tint="@android:color/black"
+        tools:layout_editor_absoluteY="16dp"/>
 
     <ImageButton
         android:id="@+id/imageButton9"
         android:layout_width="82dp"
         android:layout_height="76dp"
         android:layout_marginStart="183dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="183dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -76,18 +64,44 @@
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent" >
 
-    <View
-        android:id="@+id/bottom_bar_divider"
-        android:layout_width="0dp"
-        android:layout_height="1dp"
-        android:layout_marginBottom="8dp"
-        android:background="@android:color/darker_gray"
-        app:layout_constraintBottom_toTopOf="@id/bottom_bar_layout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
 
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:backgroundTint="#26101010">
+
+        <ImageButton
+            android:id="@+id/btnHomeMenu"
+            android:layout_width="75dp"
+            android:layout_height="69dp"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginStart="100px"
+            android:layout_marginEnd="100px"
+            android:src="@drawable/image_13" />
+
+        <ImageButton
+            android:id="@+id/btnCoffeeMenu"
+            android:layout_width="75dp"
+            android:layout_height="69dp"
+            android:layout_gravity="center|center_horizontal"
+            android:backgroundTint="#25615858"
+            android:src="@drawable/image_11" />
+
+        <ImageButton
+            android:id="@+id/btnUserMenu"
+            android:layout_width="75dp"
+            android:layout_height="69dp"
+            android:backgroundTint="#25615858"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="100px"
+            android:src="@drawable/image_7" />
+
+    </FrameLayout>
 
     <ScrollView
 
@@ -223,41 +237,6 @@
         </LinearLayout>
 
     </ScrollView>
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:layout_width="448dp"
-        android:layout_height="69dp"
-        app:backgroundTint="#26101010"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <ImageButton
-            android:id="@+id/imageButton"
-            android:layout_width="75dp"
-            android:layout_height="69dp"
-            android:layout_gravity="left|center_vertical"
-            android:layout_marginStart="100px"
-            android:layout_marginEnd="100px"
-            android:src="@drawable/image_13" />
-
-        <ImageButton
-            android:id="@+id/imageButton2"
-            android:layout_width="75dp"
-            android:layout_height="69dp"
-            android:layout_gravity="center|center_horizontal"
-            android:backgroundTint="#25615858"
-            android:src="@drawable/image_11" />
-
-        <ImageButton
-            android:id="@+id/imageButton3"
-            android:layout_width="75dp"
-            android:layout_height="69dp"
-            android:layout_gravity="right|center_vertical"
-            android:layout_marginRight="100px"
-            android:src="@drawable/image_7" />
-
-    </com.google.android.material.bottomnavigation.BottomNavigationView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

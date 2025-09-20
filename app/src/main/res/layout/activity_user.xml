@@ -9,6 +9,8 @@
     android:padding="16dp"
     tools:context=".UserActivity">
 
+
+
     <LinearLayout
         android:id="@+id/main_columns_container"
         android:layout_width="0dp"
@@ -193,11 +195,10 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnexit"
         android:layout_width="224dp"
         android:layout_height="47dp"
         android:layout_marginTop="40dp"
-        android:background="@drawable/logout_button_background"
         android:text="Cerrar sesión"
         android:textColor="@android:color/white"
         android:textStyle="bold"
@@ -206,55 +207,76 @@
         app:layout_constraintTop_toBottomOf="@id/main_columns_container"
         app:layout_constraintWidth_percent="0.6" />
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:layout_width="448dp"
-        android:layout_height="69dp"
-        app:backgroundTint="#26101010"
-        app:layout_constraintBottom_toBottomOf="parent"
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:orientation="horizontal"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp">
+        tools:layout_editor_absoluteX="-15dp"
+        tools:layout_editor_absoluteY="16dp">
+
 
         <ImageButton
-            android:id="@+id/imageButton"
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#25FFFFFF"
+            android:layout_weight="1"
+            app:srcCompat="@android:drawable/ic_menu_revert" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_marginTop="19dp"
+            android:layout_width="190dp"
+            android:layout_height="190dp"
+            android:foregroundGravity="center"
+            app:srcCompat="@drawable/image_7" />
+
+        <ImageButton
+            android:id="@+id/btnConf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#25FFFFFF"
+            android:layout_weight="1"
+            app:srcCompat="@android:drawable/ic_menu_preferences" />
+
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/navMenuCoffee"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="-2dp">
+
+        <ImageButton
+            android:id="@+id/btnHomeMenu"
             android:layout_width="75dp"
             android:layout_height="69dp"
+            android:backgroundTint="#25FFFFFF"
             android:layout_gravity="left|center_vertical"
             android:layout_marginStart="100px"
             android:layout_marginEnd="100px"
             android:src="@drawable/image_13" />
 
         <ImageButton
-            android:id="@+id/imageButton2"
+            android:id="@+id/btnCoffeeMenu"
             android:layout_width="75dp"
             android:layout_height="69dp"
+            android:backgroundTint="#25FFFFFF"
             android:layout_gravity="center|center_horizontal"
-            android:backgroundTint="#25615858"
             android:src="@drawable/image_11" />
 
         <ImageButton
-            android:id="@+id/imageButton3"
+            android:id="@+id/btnUserMenu"
             android:layout_width="75dp"
             android:layout_height="69dp"
             android:layout_gravity="right|center_vertical"
             android:layout_marginRight="100px"
             android:src="@drawable/image_7" />
-
-    </com.google.android.material.bottomnavigation.BottomNavigationView>
-
-    <LinearLayout
-        android:layout_width="446dp"
-        android:layout_height="193dp"
-        android:orientation="vertical"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="-15dp"
-        tools:layout_editor_absoluteY="16dp">
-
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:foregroundGravity="center"
-            app:srcCompat="@drawable/image_7" />
-    </LinearLayout>
+    </FrameLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
