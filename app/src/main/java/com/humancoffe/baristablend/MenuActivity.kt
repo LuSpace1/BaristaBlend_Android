@@ -23,7 +23,7 @@ class MenuActivity : AppCompatActivity() {
             insets
         }
         //logica boton conf
-        val btnConf = findViewById<ImageButton>(R.id.btnConf)
+        val btnConf = findViewById<MaterialButton>(R.id.btnConf)
         btnConf.setOnClickListener { navConf() }
         //logica boton home
         val btnCoffe = findViewById<MaterialButton>(R.id.btnCoffeeMenu)
@@ -31,6 +31,9 @@ class MenuActivity : AppCompatActivity() {
         //Logica boton User
         val btnUser = findViewById<MaterialButton>(R.id.btnUserMenu)
         btnUser.setOnClickListener { navUser() }
+
+        val btnFavorito = findViewById<MaterialButton>(R.id.btnFavoritos)
+        btnFavorito.setOnClickListener { navFavoritos() }
 
     }
 
@@ -44,6 +47,11 @@ class MenuActivity : AppCompatActivity() {
     }
     private fun navUser() {
         val intent = Intent(this, UserActivity::class.java)
+        startActivity(intent)
+    }
+
+    private fun navFavoritos() {
+        val intent = Intent(this, RecetasActivity::class.java)
         startActivity(intent)
     }
 }
