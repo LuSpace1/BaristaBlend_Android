@@ -8,265 +8,362 @@
     tools:context=".PanelConfiguracionActivity">
 
 
-
-    <FrameLayout
-        android:id="@+id/navMenuCoffee"
+    <LinearLayout
+        android:id="@+id/linearLayo666"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="-2dp">
-
-        <ImageButton
-            android:id="@+id/btnHomeMenu"
-            android:layout_width="75dp"
-            android:layout_height="69dp"
-            android:backgroundTint="#25FFFFFF"
-            android:layout_gravity="left|center_vertical"
-            android:layout_marginStart="100px"
-            android:layout_marginEnd="100px"
-            android:src="@drawable/image_13" />
-
-        <ImageButton
-            android:id="@+id/btnCoffeeMenu"
-            android:layout_width="75dp"
-            android:layout_height="69dp"
-            android:backgroundTint="#25FFFFFF"
-            android:layout_gravity="center|center_horizontal"
-            android:src="@drawable/image_11" />
-
-        <ImageButton
-            android:id="@+id/btnUserMenu"
-            android:layout_width="75dp"
-            android:layout_height="69dp"
-            android:backgroundTint="#25FFFFFF"
-            android:layout_gravity="right|center_vertical"
-            android:layout_marginRight="100px"
-            android:src="@drawable/image_7" />
-    </FrameLayout>
-
-    <LinearLayout
-        android:layout_width="172dp"
-        android:layout_height="377dp"
-        android:layout_marginTop="38dp"
-        android:layout_marginEnd="38dp"
-        android:background="#19101010"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout8">
-
-        <TextView
-            android:id="@+id/textView113"
-            android:layout_width="match_parent"
-            android:layout_height="46dp"
-            android:gravity="center"
-            android:text="Gestor de métodos" />
-
-        <TextView
-            android:id="@+id/textView21"
-            android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:gravity="center"
-            android:text="Método 1" />
-
-        <TextView
-            android:id="@+id/textView22"
-            android:layout_width="match_parent"
-            android:layout_height="46dp"
-            android:gravity="center"
-            android:text="Método 2" />
-
-        <TextView
-            android:id="@+id/textView23"
-            android:layout_width="match_parent"
-            android:layout_height="47dp"
-            android:gravity="center"
-            android:text="Método 3" />
-
-        <TextView
-            android:id="@+id/textView24"
-            android:layout_width="match_parent"
-            android:layout_height="37dp"
-            android:gravity="center"
-            android:text="Método 4" />
-
-        <TextView
-            android:id="@+id/textView27"
-            android:layout_width="match_parent"
-            android:layout_height="42dp"
-            android:gravity="center"
-            android:text="Método 5" />
-
-        <TextView
-            android:id="@+id/textView28"
-            android:layout_width="match_parent"
-            android:layout_height="37dp"
-            android:gravity="center"
-            android:text="Método 6" />
-
-        <TextView
-            android:id="@+id/textView29"
-            android:layout_width="match_parent"
-            android:layout_height="36dp"
-            android:gravity="center"
-            android:text="Método 7" />
-
-        <TextView
-            android:id="@+id/textView30"
-            android:layout_width="match_parent"
-            android:layout_height="41dp"
-            android:gravity="center"
-            android:text="Método 8" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="168dp"
-        android:layout_height="171dp"
-        android:layout_marginStart="26dp"
-        android:layout_marginTop="39dp"
-        android:background="#19101010"
-        android:orientation="vertical"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout9">
-
-        <TextView
-            android:id="@+id/textView127"
-            android:layout_width="match_parent"
-            android:layout_height="46dp"
-            android:gravity="center"
-            android:text="Contactanos" />
-
-        <TextView
-            android:id="@+id/textView184"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text=" +56 987654321" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout9"
-        android:layout_width="168dp"
-        android:layout_height="171dp"
-        android:layout_marginStart="26dp"
-        android:layout_marginTop="38dp"
-        android:background="#19101010"
-        android:orientation="vertical"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
-
-        <TextView
-            android:id="@+id/textView175"
-            android:layout_width="match_parent"
-            android:layout_height="46dp"
-            android:gravity="center"
-            android:text="Ayuda" />
-
-        <TextView
-            android:id="@+id/textView168"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="Preguntas frecuentes" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout6"
-        android:layout_width="168dp"
-        android:layout_height="171dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="72dp"
-        android:background="#19101010"
-        android:orientation="vertical"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout7">
-
-        <TextView
-            android:id="@+id/textView197"
-            android:layout_width="match_parent"
-            android:layout_height="46dp"
-            android:gravity="center"
-            android:text="Cambiar idioma" />
-
-        <TextView
-            android:id="@+id/textViewz18"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="Inglés" />
-
-        <TextView
-            android:id="@+id/textViewx19"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="Español" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout8"
-        android:layout_width="168dp"
-        android:layout_height="171dp"
-        android:layout_marginTop="72dp"
-        android:layout_marginEnd="36dp"
-        android:background="#19101010"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout7">
-
-        <TextView
-            android:id="@+id/textView17"
-            android:layout_width="match_parent"
-            android:layout_height="46dp"
-            android:gravity="center"
-            android:text="Cambiar tema" />
-
-        <TextView
-            android:id="@+id/textViewc18"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="Claro" />
-
-        <TextView
-            android:id="@+id/textViewg19"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="Oscuro" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout7"
-        android:layout_width="449dp"
-        android:layout_height="94dp"
-        android:layout_marginTop="16dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="32dp"
         android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <ImageButton
-            android:id="@+id/btnBack"
-            android:layout_width="100dp"
-            android:layout_gravity="center_vertical"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#25FFFFFF"
-            app:srcCompat="@android:drawable/ic_menu_revert" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnBackCoffe"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="30dp"
+            android:backgroundTint="@color/md_theme_secondaryContainer"
+            app:icon="@android:drawable/ic_menu_revert"
+            app:iconSize="30dp"
+            app:iconTint="@color/md_theme_secondary" />
 
         <TextView
-            android:id="@+id/textView32"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="80dp"
-            android:layout_marginTop="120px"
-            android:textStyle="bold"
-            android:textSize="16dp"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:text="Configuración" />
+            android:id="@+id/textVie66"
+            android:layout_width="250dp"
+            android:layout_height="57dp"
+            android:layout_gravity="center"
+            android:text="Configuracion"
+            android:textAlignment="center"
+            android:textSize="26sp" />
+
+    </LinearLayout>
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="122dp"
+        android:layout_height="90dp"
+        app:srcCompat="@drawable/ic_splash_logo"
+        android:scaleType="centerCrop"
+        app:tint="@color/md_theme_primary"
+        app:layout_constraintTop_toBottomOf="@id/linearLayo666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="36dp"
+        android:orientation="vertical"
+        android:layout_marginTop="90dp"
+        app:layout_constraintTop_toBottomOf="@id/linearLayo666"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/md_theme_tertiaryContainer"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="10dp"
+            app:cardUseCompatPadding="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="Cambiar idioma" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:padding="0dp"
+                android:layout_marginTop="55dp"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:gravity="center"
+                android:text="Inglés" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="30dp"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:padding="0dp"
+                android:gravity="center"
+                android:text="Español" />
+
+        </com.google.android.material.card.MaterialCardView>
 
 
     </LinearLayout>
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginEnd="36dp"
+        android:orientation="vertical"
+        android:layout_marginTop="90dp"
+        app:layout_constraintTop_toBottomOf="@id/linearLayo666"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/md_theme_tertiaryContainer"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="10dp"
+            app:cardUseCompatPadding="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="Cambiar tema" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:padding="0dp"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_marginTop="55dp"
+                android:gravity="center"
+                android:text="oscuro" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="30dp"
+                android:padding="0dp"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:gravity="center"
+                android:text="claro" />
+
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/linearLayout9"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="38dp"
+        android:backgroundTint="@color/md_theme_tertiaryContainer"
+        app:layout_constraintTop_toBottomOf="@id/llContactanos"
+        app:cardElevation="5dp"
+        app:cardCornerRadius="10dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="Acerca de la App"
+                android:textStyle="bold" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:padding="0dp"
+                android:text="Preguntas frecuentes" />
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:padding="0dp"
+                android:text="Terminos y condiciones" />
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:padding="0dp"
+                android:text="Reportar error" />
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:padding="0dp"
+                android:text="Feedback" />
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:gravity="center"
+                android:textSize="11sp"
+                android:padding="0dp"
+                android:text="Calificar App" />
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+    <LinearLayout
+        android:id="@+id/llContactanos"
+        android:layout_width="168dp"
+        android:layout_height="171dp"
+        android:orientation="vertical"
+        android:layout_marginEnd="36dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout7">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:backgroundTint="@color/md_theme_tertiaryContainer"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="10dp"
+            app:cardUseCompatPadding="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="Contactanos" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:padding="0dp"
+                android:text="+569 82610583" />
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+    </LinearLayout>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:backgroundTint="@color/md_theme_tertiaryContainer"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="40dp"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="10dp"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintTop_toBottomOf="@id/linearLayout6"
+            app:layout_constraintBottom_toBottomOf="@id/llContactanos">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:text="Notificaciones" />
+
+                <com.google.android.material.switchmaterial.SwitchMaterial
+                    android:id="@+id/swButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    app:thumbTint="@color/md_theme_secondary"
+                    android:layout_gravity="center"/>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Off"
+                    android:textColor="@color/md_theme_error"
+                    android:textSize="16sp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/navBarMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnHomeMenu"
+            style="@style/Widget.Material3.Button.IconButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="35dp"
+            android:backgroundTint="@color/md_theme_primaryContainer"
+            app:icon="@drawable/image_13"
+            app:iconSize="40dp"
+            app:iconTint="@color/md_theme_primary" />
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.Material3.Button.IconButton"
+            android:id="@+id/btnCoffeeMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/md_theme_primaryContainer"
+            app:icon="@drawable/image_11"
+            app:iconSize="40dp"
+            app:iconTint="@color/md_theme_primary" />
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.Material3.Button.IconButton"
+            android:id="@+id/btnUserMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:backgroundTint="@color/md_theme_primaryContainer"
+            app:icon="@drawable/image_7"
+            app:iconSize="40dp"
+            app:iconTint="@color/md_theme_primary" />
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -49,4 +49,5 @@ class CafesActivity : AppCompatActivity() {
         val intent = Intent(this, UserActivity::class.java)
         startActivity(intent)
     }
+
 }
