@@ -7,213 +7,364 @@
     android:layout_height="match_parent"
     tools:context=".RecetasActivity">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="300dp"
-        android:layout_height="70dp"
-        android:backgroundTint="#9B2B0B"
-        android:text="Tus recetas guardadas"
-        android:textSize="18sp"
-        app:icon="@drawable/ic_splash_logo"
-        app:iconSize="50dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout5" />
-
     <LinearLayout
-        android:id="@+id/recipe_buttons_layout"
-        android:layout_width="336dp"
-        android:layout_height="411dp"
-        android:layout_marginTop="72dp"
-        android:gravity="center_horizontal"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button">
-
-        <Button
-            android:id="@+id/btnReceta1"
-            android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:layout_marginBottom="30dp"
-            android:backgroundTint="#CA2F05"
-            android:text="Receta Jamaes Hoffman V60"
-            app:icon="@drawable/clever_dreeper"
-            app:iconSize="30dp" />
-
-        <Button
-            android:id="@+id/btnReceta3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="30dp"
-            android:backgroundTint="#CA2E04"
-            android:text="Receta Tetsu Kasuya V60"
-            app:icon="@drawable/hario_v60"
-            app:iconSize="30dp" />
-
-        <Button
-            android:id="@+id/btnReceta4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="30dp"
-            android:backgroundTint="#CA2E04"
-            android:text="Espresso Italiano"
-            app:icon="@drawable/image_11"
-            app:iconSize="35dp" />
-
-        <Button
-            android:id="@+id/button5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="30dp"
-            android:backgroundTint="#CE3005"
-            android:text="Basti Apablaza Prensa Francesa"
-            app:icon="@drawable/french_press_1"
-            app:iconSize="30dp" />
-
-        <Button
-            android:id="@+id/button6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="30dp"
-            android:backgroundTint="#CA2E04"
-            android:text="Receta Katrin Aguilar Aeropress"
-            app:icon="@drawable/aeropress" />
-
-    </LinearLayout>
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNavigationView"
-        android:layout_width="448dp"
-        android:layout_height="69dp"
-        android:background="#FFFFFF"
-        android:hapticFeedbackEnabled="false"
-        app:backgroundTint="#26101010"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <ImageButton
-            android:id="@+id/imageButton"
-            android:layout_width="75dp"
-            android:layout_height="69dp"
-            android:layout_gravity="left|center_vertical"
-            android:layout_marginStart="100px"
-            android:layout_marginEnd="100px"
-            android:src="@drawable/image_13" />
-
-        <ImageButton
-            android:id="@+id/imageButton2"
-            android:layout_width="75dp"
-            android:layout_height="69dp"
-            android:layout_gravity="center|center_horizontal"
-            android:background="#26FFFFFF"
-            android:backgroundTint="#26101010"
-            android:src="@drawable/image_11" />
-
-        <ImageButton
-            android:id="@+id/imageButton3"
-            android:layout_width="75dp"
-            android:layout_height="69dp"
-            android:layout_gravity="right|center_vertical"
-            android:layout_marginRight="100px"
-            android:src="@drawable/image_7" />
-
-    </com.google.android.material.bottomnavigation.BottomNavigationView>
-
-    <LinearLayout
-        android:id="@+id/linearLayout5"
-        android:layout_width="446dp"
-        android:layout_height="115dp"
-        android:layout_marginTop="20dp"
+        android:id="@+id/layoutTopFavorito"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="32dp"
         android:orientation="horizontal"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="1dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <ImageButton
-            android:id="@+id/imageButton4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            app:srcCompat="@android:drawable/ic_menu_revert" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnBackCoffe"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="30dp"
+            android:backgroundTint="@color/md_theme_secondaryContainer"
+            app:icon="@android:drawable/ic_menu_revert"
+            app:iconSize="30dp"
+            app:iconTint="@color/md_theme_secondary" />
 
         <TextView
-            android:id="@+id/textView3"
-            android:layout_width="114dp"
-            android:layout_height="61dp"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:text="BaristaBlend" />
+            android:id="@+id/textVie66"
+            android:layout_width="250dp"
+            android:layout_height="57dp"
+            android:layout_gravity="center"
+            android:text="Favoritos"
+            android:textAlignment="center"
+            android:textSize="34sp" />
 
-        <ImageButton
-            android:id="@+id/imageButton5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            app:srcCompat="@android:drawable/ic_menu_preferences" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnConf"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginEnd="30dp"
+            android:backgroundTint="@color/md_theme_secondaryContainer"
+            app:icon="@android:drawable/ic_menu_preferences"
+            app:iconSize="30dp"
+            app:iconTint="@color/md_theme_secondary" />
 
     </LinearLayout>
 
-    <ImageButton
-        android:id="@+id/imageButton6"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="187dp"
-        android:layout_marginEnd="185dp"
-        android:layout_marginBottom="64dp"
-        android:background="#F8F7F7"
-        android:backgroundTint="#FFFEFE"
-        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/agregar" />
+        app:layout_constraintBottom_toTopOf="@id/navBarMenu"
+        app:layout_constraintTop_toBottomOf="@id/layoutTopFavorito"
+        android:layout_marginBottom="40dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.card.MaterialCardView
+            style="@style/Widget.Material3.CardView.Elevated"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="@color/md_theme_tertiaryContainer">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/navBarMenu"
+                android:padding="12dp"
+                android:layout_gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/hario_v60"
+                    android:contentDescription="Icono Receta"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="V60 Tetsu Kasuya"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:paddingStart="12dp"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:icon="@android:drawable/btn_star"
+                    app:iconSize="24dp"
+                    android:backgroundTint="@color/md_theme_onTertiaryContainer"
+                    app:iconTint="@android:color/holo_orange_light"
+                    android:contentDescription="Favorito"/>
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            style="@style/Widget.Material3.CardView.Elevated"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="@color/md_theme_tertiaryContainer">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/navBarMenu"
+                android:padding="12dp"
+                android:layout_gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/french_press_1"
+                    android:contentDescription="Icono Receta"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Press French James Hoffman"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:paddingStart="12dp"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:icon="@android:drawable/btn_star"
+                    app:iconSize="24dp"
+                    android:backgroundTint="@color/md_theme_onTertiaryContainer"
+                    app:iconTint="@android:color/holo_orange_light"
+                    android:contentDescription="Favorito"/>
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            style="@style/Widget.Material3.CardView.Elevated"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="@color/md_theme_tertiaryContainer">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/navBarMenu"
+                android:padding="12dp"
+                android:layout_gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/aeropress"
+                    android:contentDescription="Icono Receta"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Artur David Ratio 1:6"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:paddingStart="12dp"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:icon="@android:drawable/btn_star"
+                    app:iconSize="24dp"
+                    android:backgroundTint="@color/md_theme_onTertiaryContainer"
+                    app:iconTint="@android:color/holo_orange_light"
+                    android:contentDescription="Favorito"/>
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            style="@style/Widget.Material3.CardView.Elevated"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="@color/md_theme_tertiaryContainer">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/navBarMenu"
+                android:padding="12dp"
+                android:layout_gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/kalita"
+                    android:contentDescription="Icono Receta"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Kalita bloming extendido"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:paddingStart="12dp"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:icon="@android:drawable/btn_star"
+                    app:iconSize="24dp"
+                    android:backgroundTint="@color/md_theme_onTertiaryContainer"
+                    app:iconTint="@android:color/holo_orange_light"
+                    android:contentDescription="Favorito"/>
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            style="@style/Widget.Material3.CardView.Elevated"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="@color/md_theme_tertiaryContainer">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/navBarMenu"
+                android:padding="12dp"
+                android:layout_gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/chemex"
+                    android:contentDescription="Icono Receta"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Classic Chemex"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:paddingStart="12dp"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:icon="@android:drawable/btn_star"
+                    app:iconSize="24dp"
+                    android:backgroundTint="@color/md_theme_onTertiaryContainer"
+                    app:iconTint="@android:color/holo_orange_light"
+                    android:contentDescription="Favorito"/>
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            style="@style/Widget.Material3.CardView.Elevated"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="@color/md_theme_tertiaryContainer">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/navBarMenu"
+                android:padding="12dp"
+                android:layout_gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/origami"
+                    android:contentDescription="Icono Receta"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Origami Tetsu Kasuya"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:paddingStart="12dp"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:icon="@android:drawable/btn_star"
+                    app:iconSize="24dp"
+                    android:backgroundTint="@color/md_theme_onTertiaryContainer"
+                    app:iconTint="@android:color/holo_orange_light"
+                    android:contentDescription="Favorito"/>
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+        
+    </LinearLayout>
 
     <LinearLayout
-        android:layout_width="50dp"
-        android:layout_height="411dp"
-        android:layout_marginTop="222dp"
-        android:layout_marginBottom="240dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
-        app:layout_constraintEnd_toEndOf="@id/linearLayout5"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+        android:id="@+id/navBarMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center">
 
-        <ImageButton
-            android:id="@+id/imageButton9"
-            android:layout_width="32dp"
-            android:layout_height="50dp"
-            android:layout_marginBottom="30dp"
-            app:srcCompat="@android:drawable/btn_star_big_on" />
-
-        <ImageButton
-            android:id="@+id/imageButton10"
-            android:layout_width="32dp"
-            android:layout_height="50dp"
-            android:layout_marginBottom="30dp"
-            app:srcCompat="@android:drawable/btn_star_big_on" />
-
-        <ImageButton
-            android:id="@+id/imageButto11"
-            android:layout_width="32dp"
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnHomeMenu"
+            style="@style/Widget.Material3.Button.IconButton"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="30dp"
-            app:srcCompat="@android:drawable/btn_star_big_on" />
+            android:layout_marginEnd="35dp"
+            android:backgroundTint="@color/md_theme_primaryContainer"
+            app:icon="@drawable/image_13"
+            app:iconSize="40dp"
+            app:iconTint="@color/md_theme_primary" />
 
-        <ImageButton
-            android:id="@+id/imageButton12"
-            android:layout_width="32dp"
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.Material3.Button.IconButton"
+            android:id="@+id/btnCoffeeMenu"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="30dp"
-            app:srcCompat="@android:drawable/btn_star_big_on" />
+            android:backgroundTint="@color/md_theme_primaryContainer"
+            app:icon="@drawable/image_11"
+            app:iconSize="40dp"
+            app:iconTint="@color/md_theme_primary" />
 
-        <ImageButton
-            android:id="@+id/imageButton13"
-            android:layout_width="32dp"
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.Material3.Button.IconButton"
+            android:id="@+id/btnUserMenu"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="30dp"
-            app:srcCompat="@android:drawable/btn_star_big_on" />
+            android:layout_marginStart="35dp"
+            android:backgroundTint="@color/md_theme_primaryContainer"
+            app:icon="@drawable/image_7"
+            app:iconSize="40dp"
+            app:iconTint="@color/md_theme_primary" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
