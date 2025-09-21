@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="md_theme_primary">#8E4D30</color>
-    <color name="md_theme_onPrimary">#75381E</color>
+    <color name="md_theme_onPrimary">#FFFFFF</color>
     <color name="md_theme_primaryContainer">#FFDBCD</color>
     <color name="md_theme_onPrimaryContainer">#71361B</color>
     <color name="md_theme_secondary">#77574B</color>
@@ -16,7 +16,7 @@
     <color name="md_theme_onError">#FFFFFF</color>
     <color name="md_theme_errorContainer">#FFDAD6</color>
     <color name="md_theme_onErrorContainer">#93000A</color>
-    <color name="md_theme_background">#FFF8F6</color>
+    <color name="md_theme_background">#F6E4E4</color>
     <color name="md_theme_onBackground">#231A16</color>
     <color name="md_theme_surface">#FFF8F6</color>
     <color name="md_theme_onSurface">#231A16</color>
