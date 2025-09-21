@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F0F0F0"
+    android:background="@color/md_theme_background"
     android:padding="16dp"
     tools:context=".UserActivity">
 
@@ -28,58 +28,69 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
             android:layout_weight="1"
-            android:background="@drawable/column_background"
+            android:background="@color/md_theme_background"
             android:orientation="vertical">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/header_background"
+                android:background="@color/md_theme_tertiaryContainer"
                 android:gravity="center"
                 android:padding="12dp"
                 android:text="Recetas Favoritas"
                 android:textColor="@android:color/black"
                 android:textStyle="bold" />
 
-            <Button
-                style="?android:attr/borderlessButtonStyle"
+            <com.google.android.material.button.MaterialButton
                 android:layout_width="match_parent"
+                android:clickable="true"
+                android:focusable="true"
                 android:layout_height="100dp"
                 android:layout_marginHorizontal="12dp"
                 android:layout_marginTop="12dp"
-                android:background="@drawable/recipe_button_background"
+                android:backgroundTint="@color/md_theme_secondary"
                 android:text="Receta 1"
+                android:textStyle="bold"
+                android:textAllCaps="true"
                 android:textColor="#FFFFFF" />
 
-            <Button
-                style="?android:attr/borderlessButtonStyle"
+            <com.google.android.material.button.MaterialButton
                 android:layout_width="match_parent"
+                android:clickable="true"
+                android:focusable="true"
                 android:layout_height="100dp"
                 android:layout_marginHorizontal="12dp"
-                android:layout_marginTop="8dp"
-                android:background="@drawable/recipe_button_background"
+                android:layout_marginTop="12dp"
+                android:backgroundTint="@color/md_theme_secondary"
                 android:text="Receta 2"
+                android:textStyle="bold"
+                android:textAllCaps="true"
                 android:textColor="#FFFFFF" />
 
-            <Button
-                style="?android:attr/borderlessButtonStyle"
+            <com.google.android.material.button.MaterialButton
                 android:layout_width="match_parent"
+                android:clickable="true"
+                android:focusable="true"
                 android:layout_height="100dp"
                 android:layout_marginHorizontal="12dp"
-                android:layout_marginTop="8dp"
-                android:background="@drawable/recipe_button_background"
+                android:layout_marginTop="12dp"
+                android:backgroundTint="@color/md_theme_secondary"
                 android:text="Receta 3"
+                android:textStyle="bold"
+                android:textAllCaps="true"
                 android:textColor="#FFFFFF" />
 
-            <Button
-                style="?android:attr/borderlessButtonStyle"
+            <com.google.android.material.button.MaterialButton
                 android:layout_width="match_parent"
+                android:clickable="true"
+                android:focusable="true"
                 android:layout_height="100dp"
                 android:layout_marginHorizontal="12dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="12dp"
-                android:background="@drawable/recipe_button_background"
+                android:layout_marginTop="12dp"
+                android:backgroundTint="@color/md_theme_secondary"
                 android:text="Receta 4"
+                android:textStyle="bold"
+                android:textAllCaps="true"
                 android:textColor="#FFFFFF" />
         </LinearLayout>
 
@@ -88,13 +99,13 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_weight="1"
-            android:background="@drawable/column_background"
+            android:backgroundTint="@color/md_theme_secondary"
             android:orientation="vertical">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/header_background"
+                android:background="@color/md_theme_tertiaryContainer"
                 android:gravity="center"
                 android:padding="12dp"
                 android:text="Mis datos personales"
@@ -150,7 +161,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:background="@drawable/header_background"
+                android:background="@color/md_theme_tertiaryContainer"
                 android:gravity="center"
                 android:padding="12dp"
                 android:text="Contáctanos"
@@ -194,14 +205,15 @@
         </LinearLayout>
     </LinearLayout>
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btnexit"
         android:layout_width="224dp"
         android:layout_height="47dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="15dp"
         android:text="Cerrar sesión"
         android:textColor="@android:color/white"
         android:textStyle="bold"
+        android:backgroundTint="@color/md_theme_primary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/main_columns_container"
@@ -217,66 +229,94 @@
         tools:layout_editor_absoluteY="16dp">
 
 
-        <ImageButton
-            android:id="@+id/btnBack"
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnBackCoffe"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="30dp"
+            android:backgroundTint="@color/md_theme_secondaryContainer"
+            app:icon="@android:drawable/ic_menu_revert"
+            app:iconSize="30dp"
+            app:iconTint="@color/md_theme_secondary" />
+
+        <com.google.android.material.card.MaterialCardView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="#25FFFFFF"
-            android:layout_weight="1"
-            app:srcCompat="@android:drawable/ic_menu_revert" />
+            android:backgroundTint="@color/md_theme_background"
+            android:background="@color/md_theme_background"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            app:strokeWidth="0dp"
+            >
 
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_marginTop="18dp"
-            android:layout_width="190dp"
-            android:layout_height="190dp"
-            android:foregroundGravity="center"
-            app:srcCompat="@drawable/image_7" />
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imageView3"
+                android:layout_width="190dp"
+                android:layout_height="165dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:backgroundTint="@color/md_theme_background"
+                android:background="@color/md_theme_background"
+                android:foregroundGravity="center"
+                app:srcCompat="@drawable/image_7" />
+        </com.google.android.material.card.MaterialCardView>
 
-        <ImageButton
+
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btnConf"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#25FFFFFF"
-            android:layout_weight="1"
-            app:srcCompat="@android:drawable/ic_menu_preferences" />
-
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="35dp"
+            android:backgroundTint="@color/md_theme_secondaryContainer"
+            app:icon="@android:drawable/ic_menu_preferences"
+            app:iconSize="30dp"
+            app:iconTint="@color/md_theme_secondary" />
 
 
     </LinearLayout>
 
-    <FrameLayout
-        android:id="@+id/navMenuCoffee"
+    <LinearLayout
+        android:id="@+id/navBarMenu"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="-2dp">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center">
 
-        <ImageButton
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btnHomeMenu"
-            android:layout_width="75dp"
-            android:layout_height="69dp"
-            android:backgroundTint="#25FFFFFF"
-            android:layout_gravity="left|center_vertical"
-            android:layout_marginStart="100px"
-            android:layout_marginEnd="100px"
-            android:src="@drawable/image_13" />
+            style="@style/Widget.Material3.Button.IconButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="35dp"
+            android:backgroundTint="@color/md_theme_primaryContainer"
+            app:icon="@drawable/image_13"
+            app:iconSize="40dp"
+            app:iconTint="@color/md_theme_primary" />
 
-        <ImageButton
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.Material3.Button.IconButton"
             android:id="@+id/btnCoffeeMenu"
-            android:layout_width="75dp"
-            android:layout_height="69dp"
-            android:backgroundTint="#25FFFFFF"
-            android:layout_gravity="center|center_horizontal"
-            android:src="@drawable/image_11" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/md_theme_primaryContainer"
+            app:icon="@drawable/image_11"
+            app:iconSize="40dp"
+            app:iconTint="@color/md_theme_primary" />
 
-        <ImageButton
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.Material3.Button.IconButton"
             android:id="@+id/btnUserMenu"
-            android:layout_width="75dp"
-            android:layout_height="69dp"
-            android:layout_gravity="right|center_vertical"
-            android:layout_marginRight="100px"
-            android:src="@drawable/image_7" />
-    </FrameLayout>
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:backgroundTint="@color/md_theme_primaryContainer"
+            app:icon="@drawable/image_7"
+            app:iconSize="40dp"
+            app:iconTint="@color/md_theme_primary" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

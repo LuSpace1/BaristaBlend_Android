@@ -9,6 +9,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import android.net.Uri
 import android.widget.ImageButton
+import com.google.android.material.button.MaterialButton
 
 
 class LoginActivity : AppCompatActivity() {
@@ -24,13 +25,13 @@ class LoginActivity : AppCompatActivity() {
         val btnLogin = findViewById<Button>(R.id.btnLogin)
         btnLogin.setOnClickListener { navHome() }
 
-        val btnGoogle = findViewById<ImageButton>(R.id.btnGoogle)
+        val btnGoogle = findViewById<MaterialButton>(R.id.btnGoogle)
         btnGoogle.setOnClickListener { navGoogle() }
 
-        val btnInstagram = findViewById<ImageButton>(R.id.btnInstagram)
+        val btnInstagram = findViewById<MaterialButton>(R.id.btnInstagram)
         btnInstagram.setOnClickListener { navInstagram() }
 
-        val btnFacebook = findViewById<ImageButton>(R.id.btnFacebook)
+        val btnFacebook = findViewById<MaterialButton>(R.id.btnFacebook)
         btnFacebook.setOnClickListener { navFacebook() }
     }
     //Funcion para navegar MenuActivity

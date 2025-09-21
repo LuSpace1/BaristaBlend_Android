@@ -10,6 +10,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.google.android.material.button.MaterialButton
 
 class UserActivity : AppCompatActivity() {
 
@@ -23,19 +24,19 @@ class UserActivity : AppCompatActivity() {
             insets
         }
         //logica boton Coffe
-        val btnCoffee = findViewById<ImageButton>(R.id.btnCoffeeMenu)
+        val btnCoffee = findViewById<MaterialButton>(R.id.btnCoffeeMenu)
         btnCoffee.setOnClickListener { navCafes() }
         //logica boton home
-        val btnHome = findViewById<ImageButton>(R.id.btnHomeMenu)
+        val btnHome = findViewById<MaterialButton>(R.id.btnHomeMenu)
         btnHome.setOnClickListener { navHome() }
         //Logica boton cerrar sesion
-        val btnExit = findViewById<Button>(R.id.btnexit)
+        val btnExit = findViewById<MaterialButton>(R.id.btnexit)
         btnExit.setOnClickListener { navExit() }
         //Logica boton back
-        val btnback = findViewById<ImageButton>(R.id.btnBack)
+        val btnback = findViewById<MaterialButton>(R.id.btnBackCoffe)
         btnback.setOnClickListener { finish() }
         //Logica boton configuracion
-        val btnConf = findViewById<ImageButton>(R.id.btnConf)
+        val btnConf = findViewById<MaterialButton>(R.id.btnConf)
         btnConf.setOnClickListener { navConf() }
     }
 

@@ -7,6 +7,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.google.android.material.button.MaterialButton
 
 class CafesActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,16 +20,16 @@ class CafesActivity : AppCompatActivity() {
             insets
         }
         //logica boton conf
-        val btnConf = findViewById<ImageButton>(R.id.btnConf)
+        val btnConf = findViewById<MaterialButton>(R.id.btnConf)
         btnConf.setOnClickListener { navConf() }
         //logica boton home
-        val btnHome = findViewById<ImageButton>(R.id.btnHomeMenu)
+        val btnHome = findViewById<MaterialButton>(R.id.btnHomeMenu)
         btnHome.setOnClickListener { navHome() }
         //Logica boton User
-        val btnUser = findViewById<ImageButton>(R.id.btnUserMenu)
+        val btnUser = findViewById<MaterialButton>(R.id.btnUserMenu)
         btnUser.setOnClickListener { navUser() }
 
-        val btnBack = findViewById<ImageButton>(R.id.btnBackCoffe)
+        val btnBack = findViewById<MaterialButton>(R.id.btnBackCoffe)
         btnBack.setOnClickListener {
             finish()
         }
