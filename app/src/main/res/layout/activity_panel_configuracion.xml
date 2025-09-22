@@ -23,6 +23,7 @@
             android:id="@+id/btnBackCoffe"
             android:layout_width="70dp"
             android:layout_height="40dp"
+            android:padding="20dp"
             android:layout_marginStart="30dp"
             android:backgroundTint="@color/md_theme_secondaryContainer"
             app:icon="@android:drawable/ic_menu_revert"
@@ -80,7 +81,7 @@
 
             <com.google.android.material.button.MaterialButton
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
+                android:layout_height="25dp"
                 android:padding="0dp"
                 android:layout_marginTop="55dp"
                 style="@style/Widget.Material3.Button.TextButton"
@@ -90,7 +91,7 @@
             <com.google.android.material.button.MaterialButton
                 style="@style/Widget.Material3.Button.TextButton"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="25dp"
                 android:layout_marginTop="30dp"
                 android:gravity="center"
                 android:padding="0dp"

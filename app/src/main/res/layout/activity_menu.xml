@@ -81,53 +81,130 @@
                 android:orientation="vertical"
                 android:paddingHorizontal="8dp">
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="130dp"
-                    app:srcCompat="@drawable/french_press_1" />
-
-                <TextView
-                    android:layout_width="match_parent"
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cvFrenchPress"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:paddingBottom="16dp"
-                    android:text="French Press" />
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:strokeColor="@android:color/transparent"
+                    android:backgroundTint="@color/md_theme_background">
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="130dp"
-                    app:srcCompat="@drawable/hario_v60" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="8dp">
 
-                <TextView
-                    android:layout_width="match_parent"
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="130dp"
+                            app:srcCompat="@drawable/french_press_1" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingBottom="16dp"
+                            android:text="French Press" />
+
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cvV60"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:paddingBottom="16dp"
-                    android:text="Hario V60" />
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:strokeColor="@android:color/transparent"
+                    android:backgroundTint="@color/md_theme_background">
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="130dp"
-                    app:srcCompat="@drawable/aeropress" />
-
-                <TextView
-                    android:layout_width="match_parent"
+                <LinearLayout
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:paddingBottom="16dp"
-                    android:text="Aeropress" />
+                    android:orientation="vertical"
+                    android:paddingHorizontal="8dp">
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="130dp"
-                    app:srcCompat="@drawable/clever_dreeper" />
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        app:srcCompat="@drawable/hario_v60" />
 
-                <TextView
-                    android:layout_width="match_parent"
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingBottom="16dp"
+                        android:text="Hario V60" />
+
+                </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cvAeropress"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:paddingBottom="16dp"
-                    android:text="Clever Dripper" />
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:strokeColor="@android:color/transparent"
+                    android:backgroundTint="@color/md_theme_background">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="8dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        app:srcCompat="@drawable/aeropress" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingBottom="16dp"
+                        android:text="Aeropress" />
+
+
+                </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cvDripper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:strokeColor="@android:color/transparent"
+                    android:backgroundTint="@color/md_theme_background">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="8dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        app:srcCompat="@drawable/clever_dreeper" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingBottom="16dp"
+                        android:text="Clever Dripper" />
+
+                </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+
 
             </LinearLayout>
 
@@ -138,53 +215,127 @@
                 android:orientation="vertical"
                 android:paddingHorizontal="8dp">
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="130dp"
-                    app:srcCompat="@drawable/chemex" />
-
-                <TextView
-                    android:layout_width="match_parent"
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cvChemex"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:paddingBottom="16dp"
-                    android:text="Chemex" />
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:strokeColor="@android:color/transparent"
+                    android:backgroundTint="@color/md_theme_background">
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="130dp"
-                    app:srcCompat="@drawable/kalita" />
-
-                <TextView
-                    android:layout_width="match_parent"
+                <LinearLayout
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:paddingBottom="16dp"
-                    android:text="Kalita" />
+                    android:orientation="vertical"
+                    android:paddingHorizontal="8dp">
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="130dp"
-                    app:srcCompat="@drawable/origami" />
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        app:srcCompat="@drawable/chemex" />
 
-                <TextView
-                    android:layout_width="match_parent"
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingBottom="16dp"
+                        android:text="Chemex" />
+
+                </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cvKalita"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:paddingBottom="16dp"
-                    android:text="Origami" />
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:strokeColor="@android:color/transparent"
+                    android:backgroundTint="@color/md_theme_background">
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="130dp"
-                    app:srcCompat="@drawable/hario_brech" />
-
-                <TextView
-                    android:layout_width="match_parent"
+                <LinearLayout
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:paddingBottom="16dp"
-                    android:text="Hario Switch" />
+                    android:orientation="vertical"
+                    android:paddingHorizontal="8dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        app:srcCompat="@drawable/kalita" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingBottom="16dp"
+                        android:text="Kalita" />
+
+                </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cvOrigami"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:strokeColor="@android:color/transparent"
+                    android:backgroundTint="@color/md_theme_background">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="8dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        app:srcCompat="@drawable/origami" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingBottom="16dp"
+                        android:text="Origami" />
+
+                </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cvSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:strokeColor="@android:color/transparent"
+                    android:backgroundTint="@color/md_theme_background">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="8dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        app:srcCompat="@drawable/hario_brech" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingBottom="16dp"
+                        android:text="Hario Switch" />
+
+                </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+
 
             </LinearLayout>
         </LinearLayout>
@@ -225,6 +376,7 @@
         android:gravity="center">
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnHomeMenu"
             style="@style/Widget.Material3.Button.IconButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
