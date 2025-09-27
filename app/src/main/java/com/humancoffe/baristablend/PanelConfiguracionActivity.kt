@@ -36,7 +36,6 @@ class PanelConfiguracionActivity : AppCompatActivity() {
         //Logica boton User
         val btnUser = findViewById<MaterialButton>(R.id.btnUserMenu)
         btnUser.setOnClickListener { navUser() }
-
         //logica botonSwitch
         textViewSwitch = findViewById(R.id.tvSwitch)
 

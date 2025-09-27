@@ -78,7 +78,7 @@
             android:textSize="20sp" />
 
         <EditText
-            android:id="@+id/editTextTextEmailAddress"
+            android:id="@+id/etCorreo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -93,9 +93,10 @@
             android:textSize="20sp" />
 
         <EditText
-            android:id="@+id/editTextTextPassword"
+            android:id="@+id/etPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="textPassword"
             android:ems="10"
             tools:text="******" />
 
@@ -182,7 +183,4 @@
             app:icon="@drawable/icons8_facebook"
             android:backgroundTint="@color/md_theme_background"/>
     </LinearLayout>
-
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

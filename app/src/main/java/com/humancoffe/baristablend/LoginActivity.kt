@@ -8,7 +8,9 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import android.net.Uri
+import android.widget.EditText
 import android.widget.ImageButton
+import android.widget.Toast
 import com.google.android.material.button.MaterialButton
 
 
@@ -33,7 +35,30 @@ class LoginActivity : AppCompatActivity() {
 
         val btnFacebook = findViewById<MaterialButton>(R.id.btnFacebook)
         btnFacebook.setOnClickListener { navFacebook() }
+
+        val etCorreo = findViewById<EditText>(R.id.etCorreo)
+
+        val etPassword= findViewById<EditText>(R.id.etPassword)
+
+        //Credenciales validas
+        val emailValido="BaristaBlendTeam@gmail.com"
+        val passValida="baristas123"
+
+        btnLogin.setOnClickListener {
+            val email=etCorreo.text.toString()
+            val pass=etPassword.text.toString()
+            if (email.isEmpty()||pass.isEmpty()){
+                Toast.makeText(this, "Completa todas las credenciales", Toast.LENGTH_LONG).show()
+            } else if(email.equals(emailValido)&&pass.equals(passValida)){
+                Toast.makeText(this, "Iniciando Sesion", Toast.LENGTH_SHORT).show()
+                navHome()
+            } else{
+                Toast.makeText(this, "Credenciales Invalidad", Toast.LENGTH_LONG).show()
+            }
+        }
+
     }
+
     //Funcion para navegar MenuActivity
     fun navHome(){
         val intent = Intent(this, MenuActivity::class.java)
@@ -54,6 +79,5 @@ class LoginActivity : AppCompatActivity() {
         val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/login/?locale=es_LA"))
         startActivity(intent)
     }
-
 
 }

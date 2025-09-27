@@ -12,9 +12,6 @@
         android:supportsRtl="true"
         android:theme="@style/Base.Theme.BaristaBlend">
         <activity
-            android:name=".MainActivityPrueba"
-            android:exported="false" />
-        <activity
             android:name=".ViewRecetasActivity"
             android:exported="true" />
         <activity
@@ -43,9 +40,6 @@
         </activity>
         <activity
             android:name=".MenuActivity"
-            android:exported="true" />
-        <activity
-            android:name=".MainActivity"
             android:exported="true" />
     </application>
 
