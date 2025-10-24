@@ -12,25 +12,22 @@
         android:supportsRtl="true"
         android:theme="@style/Base.Theme.BaristaBlend">
         <activity
-            android:name=".ViewRecetasActivity"
+            android:name=".ui.recetas.RecetasActivity"
             android:exported="true" />
         <activity
-            android:name=".VacioActivity"
+            android:name=".ui.usuario.PanelConfiguracionActivity"
             android:exported="true" />
         <activity
-            android:name=".PanelConfiguracionActivity"
+            android:name=".ui.usuario.UserActivity"
             android:exported="true" />
         <activity
-            android:name=".UserActivity"
+            android:name=".ui.cafes.CafesActivity"
             android:exported="true" />
         <activity
-            android:name=".CafesActivity"
+            android:name=".ui.recetas_favoritas.RecetasFavoritasActivity"
             android:exported="true" />
         <activity
-            android:name=".RecetasActivity"
-            android:exported="true" />
-        <activity
-            android:name=".LoginActivity"
+            android:name=".ui.auth.LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -39,7 +36,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MenuActivity"
+            android:name=".ui.menu.MenuActivity"
             android:exported="true" />
     </application>
 
