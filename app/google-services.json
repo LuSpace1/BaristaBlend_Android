@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "575450401541",
+    "project_id": "baristablend-test",
+    "storage_bucket": "baristablend-test.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:575450401541:android:11e9fc06ce1319ecd3856c",
+        "android_client_info": {
+          "package_name": "com.humancoffe.baristablend"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyEpy6vDUOZv23ZaB62G9W1hsBTaPCLIk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
